@@ -1,2 +1,20 @@
-@import 'variables';
-@import 'base';
+//Base, overall page
+
+@import 'base/variables';
+@import 'base/mixin';
+@import 'base/base';
+@import 'base/layout';
+
+//Modules
+
+@import 'modules/header';
+@import 'modules/footer';
+
+//Components wich are small f.example buttons.
+
+@import 'components/alerts';
+@import 'components/buttons';
+@import 'components/forms';
+@import 'components/list';
+@import 'components/nav';
+@import 'components/tables';
