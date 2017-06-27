@@ -1,12 +1,13 @@
 .btn{
-  background-color: #4CAF50;
+  background-color: $secondary-color;
   padding: 10px 27px;
   text-align: center;
   text-decoration: none;
   border:solid;
-  border-color: #4CAF50;
+  border-color: $secondary-color;
 
   @include border-radius(2px);
+  @include box-shadow(1px);
 
   display: inline-block;
 

@@ -3,3 +3,7 @@
   -webkit-border-radius: $radius;
   border-radius: $radius;
 }
+
+@mixin box-shadow($depth){
+  box-shadow: $depth $depth $depth #888;
+}
