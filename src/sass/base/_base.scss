@@ -5,6 +5,8 @@
 
 body {
   background: $white;
+  @include flexit;
+  flex-direction: column;
 }
 
 h1 {

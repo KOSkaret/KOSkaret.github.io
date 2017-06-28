@@ -1,53 +1,56 @@
 .container{
-  width: 90%;
-  margin: auto;
+
 }
 
 #section1 {
-  background-color: $primary-color;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  .container{
+      justify-content: center;
+      align-items: center;
+      align-self: center;
+      max-height: 50%;
+      max-width: 50%;
+  }
 
-    padding-top: 30px;
-    padding-bottom: 30px;
+  background-color: $primary-color;
+
 
   p{
     padding-top: 10px;
   }
-
-  ul {
-    li{
-      display: inline-block;
-    }
-  }
 }
 
 #section2{
-  
+
 }
 
 #section3{
-
+  align-items: center;
+  list-style: none;
   ul {
+    @include flexit-center;
     li{
       display: inline-flex;
+      flex-wrap: wrap;
 
       .card{
         @include border-radius(1px);
         @include box-shadow(1px);
 
-        border-style: solid;
         border-color: $secondary-color;
 
         background-color: $secondary-color;
 
-        padding: 30px;
-        margin: 10px;
+        padding: 10px;
+        margin-bottom: 20px;
+        margin-right: 15px;
 
-        width: 320px;
-        height: 210px;
+        width: 256px;
+        height: 250px;
 
         img{
-          width: 320px;
+          width: 236px;
           height: 180px;
         }
       }

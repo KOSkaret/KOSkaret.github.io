@@ -7,3 +7,18 @@
 @mixin box-shadow($depth){
   box-shadow: $depth $depth $depth #888;
 }
+
+@mixin flexit{
+  -ms-box-orient: horizontal;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+}
+
+@mixin flexit-center{
+  -webkit-justify-content: center;
+  justify-content: center; 
+}
