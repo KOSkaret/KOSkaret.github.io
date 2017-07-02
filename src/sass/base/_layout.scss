@@ -1,17 +1,12 @@
 .container{
-
+  justify-content: center;
+  align-items: center;
+  align-self: center;
 }
 
 #section1 {
   display: flex;
   flex-direction: column;
-  .container{
-      justify-content: center;
-      align-items: center;
-      align-self: center;
-      max-height: 50%;
-      max-width: 50%;
-  }
 
   background-color: $primary-color;
 
@@ -26,14 +21,8 @@
 }
 
 #section3{
-  align-items: center;
-  list-style: none;
   ul {
-    @include flexit-center;
     li{
-      display: inline-flex;
-      flex-wrap: wrap;
-
       .card{
         @include border-radius(1px);
         @include box-shadow(1px);
