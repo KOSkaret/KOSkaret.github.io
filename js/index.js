@@ -1,5 +1,3 @@
-import '../sass/main.scss';
-
 /*
 var w = window;
 var d = document;

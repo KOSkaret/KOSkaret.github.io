@@ -1,0 +1,19 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: $background-color;
+  @include flexit;
+  flex-direction: column;
+}
+
+h1 {
+  color: $content-header-color;
+}
+
+a{
+  text-decoration: none;
+  color: $content-color;
+}

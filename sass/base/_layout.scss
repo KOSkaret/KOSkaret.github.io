@@ -1,0 +1,28 @@
+.container{
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+}
+
+#section1 {
+  display: flex;
+  flex-direction: column;
+
+  background-color: $primary-color;
+
+
+  p{
+    padding-top: 10px;
+  }
+}
+
+#section2{
+
+}
+
+#section3{
+  ul {
+    li{
+    }
+  }
+}
