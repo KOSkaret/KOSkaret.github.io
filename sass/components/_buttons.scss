@@ -3,25 +3,20 @@
   padding: 10px 30px;
   text-align: center;
   text-decoration: none;
-  border:solid;
-  border-color: $secondary-color;
 
-  @include border-radius(2px);
-  @include box-shadow(1px);
+  @include material-std($secondary-color);
 
   display: inline-block;
 
   margin-left: 5px;
-  font-size: 16px;
+  font-size: 1.1em;
 
+  i{
+    margin-right: 5px;
+  }
 }
 
 .btn:hover{
   background-color: $secondary-color-darker;
   border-color: $secondary-color-darker;
-}
-
-.social-btn{
-  padding: 5px;
-  @include border-radius(100%);
 }

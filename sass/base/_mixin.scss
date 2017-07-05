@@ -8,6 +8,14 @@
   box-shadow: $depth $depth $depth $box-shadow-color;
 }
 
+@mixin material-std($border-color){
+  border-style: solid;
+  border-color: $border-color;
+
+  @include border-radius(2px);
+  @include box-shadow(1px);
+}
+
 @mixin flexit{
   -ms-box-orient: horizontal;
   display: -webkit-box;

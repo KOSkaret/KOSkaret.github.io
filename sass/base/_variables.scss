@@ -1,14 +1,23 @@
 //Primary colors:
 $white: #FFF;
 
-//used colors:
-$primary-color: #009688;
+//teal colors
+$teal-500: #009688;
+$teal-800: #00695C;
 
-$secondary-color: #FFA000;
-$secondary-color-darker: #FF6F00;
+//amber colors
+$amber-500: #FFA000;
+$amber-700: #FF6F00;
+
+//used colors:
+$primary-color: $teal-500;
+$primary-color-darker: $teal-800;
+
+$secondary-color: $amber-500;
+$secondary-color-darker: $amber-700;
 $background-color: $white;
 
 $content-color: #000;
-$content-header-color: #009;
+$content-header-color: #000;
 
-$box-shadow-color: #888;
+$box-shadow-color: #666;
