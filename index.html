@@ -12,80 +12,101 @@
 <body>
   <nav>
     <div class="navigation">
-      <div class="navbrand"><h1>Knut O. Skaret</h1></div>
+      <div class="navbrand">
+        <h1>Knut O. Skaret</h1></div>
       <div class="navmenu">
-      <ul>
-        <li><a href="#section1">Start</a></li>
-        <li><a href="#section2">About</a></li>
-        <li><a href="#section3">Portefolio</a></li>
-      </ul>
+        <ul>
+          <li><a href="#section1">Start</a></li>
+          <li><a href="#section2">About</a></li>
+          <li><a href="#section3">Portefolio</a></li>
+        </ul>
       </div>
     </div>
   </nav>
   <!--See README.md for more information about this page. -->
-  <div id="section1">
-    <div class="container">
-      <!-- Make a jumbotron with a header and a few social media icons. -->
-      <p>Ambition to create</p>
-      <ul>
-        <li class="btn"><a href="https://twitter.com/TyfonKnut"><i class="fa fa-twitter" aria-hidden="true"></i>@TyfonKnut</a></li>
-        <li class="btn">
-          <a href="https://www.linkedin.com/in/knut-olav-skaret-9679b238/">
+  <div class="content">
+    <div id="jumbotron">
+      <div class="jumbotron-bg">
+        <!-- Make a jumbotron with a header and a few social media icons. -->
+        <div class="container">
+          <h2>Ambition to create</h2>
+          <ul>
+            <li class="btn"><a href="https://twitter.com/TyfonKnut"><i class="fa fa-twitter" aria-hidden="true"></i>@TyfonKnut</a></li>
+            <li class="btn">
+              <a href="https://www.linkedin.com/in/knut-olav-skaret-9679b238/">
             <i class="fa fa-linkedin" aria-hidden="true"></i>Knut Olav Skaret</a></li>
-        <li class="btn social-btn"><a href="https://github.com/KOSkaret"><i class="fa fa-github" aria-hidden="true"></i>KOSkaret</a></li>
-      </ul>
+            <li class="btn social-btn"><a href="https://github.com/KOSkaret"><i class="fa fa-github" aria-hidden="true"></i>KOSkaret</a></li>
+          </ul>
+        </div>
+      </div>
     </div>
-  </div>
 
-  <div id="section2">
-    <div class="container">
-      <!-- Introduction about me an my interest -->
-      <h2>About me</h2>
-      <p>I am an individual that likes to learn and work with new things. The things I enjoy learning about, is programming and general IT solutions. Thanks to my background as an ICT-consultant and interest in programming, so am I learning many new things.</p>
+    <div id="aboutMe">
+      <div class="container">
+        <!-- Introduction about me an my interest -->
+        <h2>About me</h2>
+        <p>This is just a description about me.</p>
+      </div>
     </div>
-  </div>
 
-  <div id="section3">
-    <div class="container">
-      <!-- My portefolio of projects I have done, maybe include a reference to
+    <div id="projects">
+      <div class="container">
+        <!-- My portefolio of projects I have done, maybe include a reference to
         my projects as url. -->
-      <ul>
-        <li>
-          <div class="card">
-            <a href="">
-              <h3>Project 1</h3>
-              <img src="./img/project1.jpg" alt="">
-              <p>This is a text description about my project. Why I made it, what I made it of.
-              </br>Test</p>
-            </a>
-          </div>
-        </li>
-        <li>
-          <div class="card">
-            <a href="">
-              <h3>Project 2</h3>
-              <img src="./img/project2.jpg" alt="">
-              <p>This is a text description about my project. Why I made it, what I made it of.</p>
-            </a>
-          </div>
-        </li>
-        <li>
-          <div class="card">
-            <a href="">
-              <h3>Project 3</h3>
-              <img src="./img/project3.jpg" alt="">
-              <p>This is a text description about my project. Why I made it, what I made it of.</p>
-            </a>
-          </div>
-        </li>
-      </ul>
+        <ul>
+          <li>
+            <div class="card">
+              <a href="">
+                <h3>Project 1</h3>
+                <img src="./img/project1.jpg" alt="">
+                <p>This is a text description about my project. Why I made it, what I made it of.
+                  </br>Test</p>
+              </a>
+            </div>
+          </li>
+          <li>
+            <div class="card">
+              <a href="">
+                <h3>Project 2</h3>
+                <img src="./img/project2.jpg" alt="">
+                <p>This is a text description about my project. Why I made it, what I made it of.</p>
+              </a>
+            </div>
+          </li>
+          <li>
+            <div class="card">
+              <a href="">
+                <h3>Project 3</h3>
+                <img src="./img/project3.jpg" alt="">
+                <p>This is a text description about my project. Why I made it, what I made it of.</p>
+              </a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="contact">
+      <div class="container">
+        <form class="forms" action="index.html" method="post">
+          <input type="text" name="mail" placeholder="Your mail here.">
+          <input type="text" name="content" placeholder="Your message here.">
+          <input class="btn" type="submit">
+        </form>
+      </div>
     </div>
   </div>
   <footer>
-    <p>this is my footer.</p>
+    <div class="footer">
+      <ul>
+        <li><a href="#section1">Start</a></li>
+        <li><a href="#section2">About</a></li>
+        <li><a href="#section3">Portefolio</a></li>
+        <li><a href="#section4">Contact me</a></li>
+      </ul>
+    </div>
   </footer>
   <script src="./js/index.js">
-
   </script>
 </body>
 

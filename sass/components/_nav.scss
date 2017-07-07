@@ -1,7 +1,7 @@
 .navigation{
   margin:auto;
-  display: flex;
   justify-content: space-between;
+  flex-direction: row;
   background-color: $primary-color-darker;
   align-items: center;
   height: 10vh;
