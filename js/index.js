@@ -1,22 +1,12 @@
-/*var w = window;
-var d = document;
-var e = d.documentElement;
-var b = d.body;
+var sideMenu = document.getElementById('side-menu');
+var content = document.getElementById('contentid');
 
-var section1 = d.getElementById('section1');
-var section2 = d.getElementById('section2');
-var section3 = d.getElementById('section3');
+function openSlideMenu(){
+  sideMenu.style.width= '250px';
+  content.style.marginLeft= '250px';
+}
 
-var y = w.innerHeight || e.clientHeight || b.clientHeight;
-
-function main(){
-
-  section1.style.height = y + 'px';
-
-  section2.style.height = y + 'px';
-  section3.style.height = y + 'px';
-
-};
-
-window.onload = main;
-*/
+function closeSlideMenu(){
+  sideMenu.style.width= '0px';
+  content.style.marginLeft= '0px';
+}

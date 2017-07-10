@@ -1,0 +1,7 @@
+#aboutMe{
+  .container{
+    background-color: $white;
+    @include material-std($white);
+    width: 80vw;
+  }
+}

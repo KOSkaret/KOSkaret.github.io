@@ -1,27 +1,32 @@
-.navigation{
+#navbar{
   margin:auto;
+  width: 100%;
   justify-content: space-between;
-  flex-direction: row;
-  background-color: $primary-color-darker;
   align-items: center;
+  flex-flow: row;
+  background-color: $primary-color-darker;
   height: 10vh;
 
   .navbrand{
     margin-left: 10px;
   }
 
-    .navmenu{
-      ul{
-        list-style: none;
-        display: inline-flex;
-        li{
-          margin-right: 10px;
+  .open-slide{
+    margin-left: 20px; 
+  }
 
-          font-size: 1.4em;
-          text-transform: uppercase;
+  .navbar-nav{
+    margin-left: 10px;
+    ul{
+      list-style: none;
+      li{
+        margin-right: 10px;
 
-          background-color: $primary-color-darker;
-        }
+        font-size: 1.2em;
+        font-weight: bold;
+
+        text-transform: uppercase;
       }
     }
+  }
 }

@@ -1,19 +1,49 @@
 .card{
-  flex-grow: 1;
   @include material-std($background-color);
-
   background-color: $background-color;
 
-  padding: 10px;
-  margin-bottom: 20px;
-  margin-right: 5px;
-
-  h1,h2,h3,h4,h5,h6{
-    text-align: center;
-  }
+  padding: 0 10px 10px 10px;
+  width: 240px;
+  margin-bottom: 10px;
+  margin-right: 3px;
 
   img{
-    max-width: 100%;
+    width: 100%;
     height: auto;
   }
+
+  p{display: none;}
+
+  .btn{
+    align-self: center;
+  }
+
 }
+
+
+.card.highlight{
+
+  order: -1;
+  width:100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-flow: row wrap;
+  padding-bottom: 20px;
+
+  h3{
+    width:100%
+  }
+    img{
+      width:30%;
+      height: auto;
+    }
+
+    p{
+      display: inherit;
+      margin-left: 20px;
+    }
+    .btn{
+      display: none;
+    }
+  }

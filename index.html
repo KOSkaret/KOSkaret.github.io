@@ -10,26 +10,36 @@
 </head>
 
 <body>
-  <nav>
-    <div class="navigation">
-      <div class="navbrand">
-        <h1>Knut O. Skaret</h1></div>
-      <div class="navmenu">
+  <nav id="navbar">
+    <span class="open-slide" onclick="openSlideMenu()">
+      <a href="#"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></a>
+    <span>
+      <span class="navbar-nav">
         <ul>
-          <li><a href="#section1">Start</a></li>
-          <li><a href="#section2">About</a></li>
-          <li><a href="#section3">Portefolio</a></li>
+          <li><a href="#navbar">Start</a></li>
+          <li><a href="#aboutMe">About</a></li>
+          <li><a href="#projects">Portefolio</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
-      </div>
-    </div>
+      </span>
   </nav>
+
+  <div id="side-menu" class="side-nav">
+    <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+    <ul>
+      <li><a href="#navbar">Start</a></li>
+      <li><a href="#aboutMe">About</a></li>
+      <li><a href="#projects">Portefolio</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
   <!--See README.md for more information about this page. -->
-  <div class="content">
+  <div class="content" id='contentid'>
     <div id="jumbotron">
       <div class="jumbotron-bg">
         <!-- Make a jumbotron with a header and a few social media icons. -->
         <div class="container">
-          <h2>Ambition to create</h2>
+          <h2>Ambition to create and learn</h2>
           <ul>
             <li class="btn"><a href="https://twitter.com/TyfonKnut"><i class="fa fa-twitter" aria-hidden="true"></i>@TyfonKnut</a></li>
             <li class="btn">
@@ -53,44 +63,49 @@
       <div class="container">
         <!-- My portefolio of projects I have done, maybe include a reference to
         my projects as url. -->
-        <ul>
-          <li>
+
             <div class="card">
-              <a href="">
                 <h3>Project 1</h3>
                 <img src="./img/project1.jpg" alt="">
                 <p>This is a text description about my project. Why I made it, what I made it of.
                   </br>Test</p>
-              </a>
+                  <div class="btn">
+                    Read more
+                  </div>
             </div>
-          </li>
-          <li>
             <div class="card">
-              <a href="">
                 <h3>Project 2</h3>
                 <img src="./img/project2.jpg" alt="">
                 <p>This is a text description about my project. Why I made it, what I made it of.</p>
-              </a>
+                <div class="btn">
+                  Read more
+                </div>
             </div>
-          </li>
-          <li>
-            <div class="card">
-              <a href="">
+            <div class="card highlight">
+
                 <h3>Project 3</h3>
                 <img src="./img/project3.jpg" alt="">
                 <p>This is a text description about my project. Why I made it, what I made it of.</p>
-              </a>
+                <div class="btn">
+                  Read more
+                </div>
             </div>
-          </li>
-        </ul>
+            <div class="card">
+                <h3>Project 4</h3>
+                <img src="./img/project3.jpg" alt="">
+                <p>This is a text description about my project. Why I made it, what I made it of.</p>
+                <div class="btn">
+                  Read more
+                </div>
+            </div>
       </div>
     </div>
 
     <div id="contact">
       <div class="container">
         <form class="forms" action="index.html" method="post">
-          <input type="text" name="mail" placeholder="Your mail here.">
-          <input type="text" name="content" placeholder="Your message here.">
+          <input type="email" name="email" placeholder="Write your mail here.">
+          <textarea name="content" rows="5" placeholder="Write your message here."></textarea>
           <input class="btn" type="submit">
         </form>
       </div>
@@ -99,10 +114,10 @@
   <footer>
     <div class="footer">
       <ul>
-        <li><a href="#section1">Start</a></li>
-        <li><a href="#section2">About</a></li>
-        <li><a href="#section3">Portefolio</a></li>
-        <li><a href="#section4">Contact me</a></li>
+        <li><a href="#navbar">Start</a></li>
+        <li><a href="#aboutMe">About</a></li>
+        <li><a href="#projects">Portefolio</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </div>
   </footer>

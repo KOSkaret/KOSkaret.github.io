@@ -1,0 +1,50 @@
+#contact{
+      display: flex;
+  .container{
+    width: 80vw;
+    .forms{
+      width:100%;
+      input{
+        @include material-std($white);
+        background-color: $white;
+
+        margin-bottom: 10px;
+        padding:12px 20px;
+
+        font-size: 1.8em;
+
+        :focus{
+          @include box-shadow(4px);
+        }
+
+      }
+
+      textarea{
+        display: flex;
+        width: 100%;
+        padding:12px 20px;
+        @include material-std($white);
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1.8em;
+      }
+
+      input[type=button], input[type=submit], input[type=reset]{
+        background-color: $secondary-color;
+        text-align: center;
+        text-decoration: none;
+
+        @include material-std($secondary-color);
+      }
+
+      input[type=email]{
+        width: 100%;
+      }
+
+      input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover{
+        background-color: $secondary-color-darker;
+        border-color: $secondary-color-darker;
+      }
+    }
+  }
+
+}
