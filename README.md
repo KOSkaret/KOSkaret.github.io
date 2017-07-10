@@ -18,6 +18,6 @@ Which is where I am able to:
 
 ## Where can I find the project?
 
-[the projects index file](/dist/html/index.html)
+[the projects index file](KOSkaret.github.io)
 
 [Direct link to the repository](https://github.com/KOSkaret/KOSkaret.github.io)
