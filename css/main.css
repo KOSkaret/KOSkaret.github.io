@@ -3,15 +3,15 @@ body, div {
   flex-direction: column; }
 
 body {
-  margin: 0; }
+  margin: 0;
+  overflow-x: hidden; }
 
 ul {
   -webkit-margin-before: 0px;
   -webkit-marghin-after: 0px;
   -webkit-padding-start: 0px;
-  display: flex; }
-  ul li {
-    display: flex; }
+  display: flex;
+  flex-direction: column; }
 
 nav, footer, h1, h2, h3, h4, h5, h6, i, span {
   display: flex; }
@@ -81,6 +81,12 @@ a {
   display: flex;
   flex: 0 1 auto;
   flex-flow: row wrap; }
+@media screen and (max-width: 1070px) {
+  #projects .highlight {
+    flex-direction: column; }
+    #projects .highlight img {
+      width: 100%;
+      height: auto; } }
 
 #contact {
   display: flex; }
@@ -136,7 +142,8 @@ a {
   padding: 20px 0 10px 0;
   margin-top: 30px; }
   .footer ul {
-    list-style: none; }
+    list-style: none;
+    flex-direction: row; }
     .footer ul li {
       margin-right: 10px;
       font-size: 1.4em;
@@ -174,20 +181,57 @@ a {
   flex-flow: row;
   background-color: #00695C;
   height: 10vh; }
+  #navbar ul {
+    list-style: none;
+    flex-direction: row; }
+    #navbar ul li {
+      margin-right: 10px;
+      font-size: 1.2em;
+      font-weight: bold;
+      text-transform: uppercase; }
   #navbar .navbrand {
     margin-left: 10px; }
   #navbar .open-slide {
     margin-left: 20px; }
   #navbar .navbar-nav {
     margin-left: 10px; }
-    #navbar .navbar-nav ul {
-      list-style: none; }
-      #navbar .navbar-nav ul li {
-        margin-right: 10px;
-        font-size: 1.2em;
-        font-weight: bold;
-        text-transform: uppercase; }
 
+.side-nav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  opacity: 0.9;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s; }
+  .side-nav a {
+    padding: 10px 10px 10px 30px;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #FFF;
+    transition: 0.3s; }
+  .side-nav a:hover {
+    color: #fff; }
+  .side-nav .btn-close {
+    position: absolute;
+    top: 0;
+    right: 22px;
+    font-size: 1.8em;
+    margin-left: 50px; }
+
+.content {
+  transition: margin-left 0.5s;
+  overflow: hidden;
+  width: 100%; }
+
+@media screen and (max-width: 600px) {
+  .navbar-nav {
+    display: none; } }
 .card {
   border-style: solid;
   border-color: #FFF;
@@ -197,7 +241,7 @@ a {
   box-shadow: 1px 1px 1px #666;
   background-color: #FFF;
   padding: 0 10px 10px 10px;
-  width: 240px;
+  width: 250px;
   margin-bottom: 10px;
   margin-right: 3px; }
   .card img {

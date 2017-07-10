@@ -4,6 +4,17 @@
     display: flex;
     flex:0 1 auto;
     flex-flow:row wrap;
-    
+
   }
+
+  .highlight{
+    @media screen and (max-width: $break-large){
+      flex-direction: column;
+      img{
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+
 }
