@@ -13,7 +13,7 @@
   <nav id="navbar">
     <span class="open-slide" onclick="openSlideMenu()">
       <a href="#"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></a>
-    <span>
+    </span>
       <span class="navbar-nav">
         <ul>
           <li><a href="#navbar">Start</a></li>
@@ -25,8 +25,8 @@
   </nav>
 
   <div id="side-menu" class="side-nav">
-    <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
-    <ul>
+    <ul onclick="closeSlideMenu()">
+      <li><a href="#" class="btn-close">&times;</a></li>
       <li><a href="#navbar">Start</a></li>
       <li><a href="#aboutMe">About</a></li>
       <li><a href="#projects">Portefolio</a></li>
