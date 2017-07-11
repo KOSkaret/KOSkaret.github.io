@@ -2,15 +2,15 @@
   margin-top: 10vh;
   .jumbotron-bg{
     width: 80vw;
-    height: 45vw;
+    height: auto;
 
     background-image: url("/img/project2.jpg");
-    background-repeat:round;
+    background-repeat:no-repeat;
     @include border-radius(2px);
     @include box-shadow(1px);
     .container{
       padding: 10px 20px;
-      margin:auto;
+      margin: 30vh auto;
       @include material-std;
       background-color: $jumbotron-bg;
       max-width: 80%;
@@ -27,9 +27,9 @@
         justify-content: center;
         width:100%;
         height: 100%;
-        max-width: none;
-        padding:0;
         margin:auto;
+        padding: 30vh 0;
+        max-width: none;
         ul{flex-direction: column;}}
     }
   }
