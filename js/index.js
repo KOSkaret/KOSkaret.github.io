@@ -1,5 +1,5 @@
 var sideMenu = document.getElementById('side-menu');
-var content = document.getElementById('contentid');
+var content = document.getElementById('start');
 
 function openSlideMenu(){
   sideMenu.style.width= '250px';

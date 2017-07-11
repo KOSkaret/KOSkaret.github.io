@@ -33,7 +33,10 @@
         text-align: center;
         text-decoration: none;
 
+        border-style: solid;
+        border-color: $secondary-color;
         @include material-std;
+
       }
 
       input[type=email]{
