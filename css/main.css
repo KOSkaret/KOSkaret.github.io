@@ -110,6 +110,9 @@ a {
           box-shadow: 4px 4px 4px #666; }
       #contact .container .forms textarea {
         display: flex;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
         width: 100%;
         padding: 12px 20px;
         -moz-border-radius: 2px;
@@ -129,7 +132,10 @@ a {
         border-radius: 2px;
         box-shadow: 1px 1px 1px #666; }
       #contact .container .forms input[type=email] {
-        width: 100%; }
+        width: 100%;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box; }
       #contact .container .forms input[type=button]:hover, #contact .container .forms input[type=submit]:hover, #contact .container .forms input[type=reset]:hover {
         background-color: #FF6F00;
         border-color: #FF6F00; }
