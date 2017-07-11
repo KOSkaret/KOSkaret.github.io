@@ -1,11 +1,13 @@
 #navbar{
   margin:auto;
   width: 100%;
-  justify-content: space-between;
-  align-items: center;
+  justify-content:flex-start;
+  align-items: baseline;
   flex-flow: row;
   background-color: $primary-color-darker;
-  height: 10vh;
+  height: 5vh;
+
+  padding: 20px 0px 0px 0px;
 
   ul{
     list-style: none;
@@ -13,16 +15,11 @@
     li{
       margin-right: 10px;
 
-      font-size: 1.2em;
+      font-size: 1.6em;
       font-weight: bold;
 
       text-transform: uppercase;
     }
-  }
-
-
-  .navbrand{
-    margin-left: 10px;
   }
 
   .open-slide{
@@ -79,7 +76,7 @@
   width:100%;
 }
 
-@media screen and (max-width:$break){
+@media screen and (max-width:$break-large){
   .navbar-nav{display: none;}
 
 }
