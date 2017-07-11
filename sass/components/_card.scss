@@ -1,5 +1,5 @@
 .card{
-  @include material-std($background-color);
+  @include material-std;
   background-color: $background-color;
 
   padding: 0 10px 10px 10px;

@@ -5,7 +5,7 @@
   text-align: center;
   text-decoration: none;
 
-  @include material-std($secondary-color);
+  @include material-std;
 
   display: inline-flex;
   margin-top: 5px;

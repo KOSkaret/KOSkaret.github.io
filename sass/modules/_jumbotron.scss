@@ -11,8 +11,8 @@
     .container{
       padding: 10px 20px;
       margin:auto;
-      @include material-std($white);
-      background-color: $white;
+      @include material-std;
+      background-color: $jumbotron-bg;
 
       max-width: 80%;
 

@@ -8,9 +8,7 @@
   box-shadow: $depth $depth $depth $box-shadow-color;
 }
 
-@mixin material-std($border-color){
-  border-style: solid;
-  border-color: $border-color;
+@mixin material-std{
 
   @include border-radius(2px);
   @include box-shadow(1px);

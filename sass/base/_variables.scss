@@ -3,7 +3,7 @@ $white: #FFF;
 
 //teal colors
 $teal-500: #009688;
-$teal-800: #00695C;
+$teal-800: rgba(0, 105, 92, 1);
 
 //amber colors
 $amber-500: #FFA000;
@@ -17,6 +17,7 @@ $secondary-color: $amber-500;
 $secondary-color-darker: $amber-700;
 
 $background-color: $white;
+$jumbotron-bg: rgba(255, 255, 255, 0.7);
 
 $content-color: #000;
 $content-header-color: #000;

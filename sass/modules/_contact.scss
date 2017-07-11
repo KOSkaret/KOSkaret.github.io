@@ -5,7 +5,7 @@
     .forms{
       width:100%;
       input{
-        @include material-std($white);
+        @include material-std;
         background-color: $white;
 
         margin-bottom: 10px;
@@ -23,7 +23,7 @@
         display: flex;
         width: 100%;
         padding:12px 20px;
-        @include material-std($white);
+        @include material-std;
         font-family: 'Open Sans', sans-serif;
         font-size: 1.8em;
       }
@@ -33,7 +33,7 @@
         text-align: center;
         text-decoration: none;
 
-        @include material-std($secondary-color);
+        @include material-std;
       }
 
       input[type=email]{
