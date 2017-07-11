@@ -18,6 +18,22 @@ Which is where I am able to:
 
 ## Where can I find the project?
 
-[the projects index file](KOSkaret.github.io)
+[View the produced content here.](KOSkaret.github.io)
 
 [Direct link to the repository](https://github.com/KOSkaret/KOSkaret.github.io)
+
+
+## What to do?
+
+Here's the todo list for this webpage:
+
+- Nav
+  - When jumping to somewhere on the same page, make it so that it doesnt overlap.
+- jumbotron
+  - Consider making the jumbotron a parallax.
+- About me
+- Project
+  - Make projects fit the full width of the screen when on phone.
+  - When screen is large, make all "unopened" projects small and fit in a row with a column of three.
+- contact
+  - Make text-box smaller when on phone.
