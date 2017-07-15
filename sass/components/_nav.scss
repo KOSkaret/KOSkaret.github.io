@@ -6,9 +6,9 @@
   align-items: baseline;
   flex-flow: row;
   background-color: $primary-color-darker;
-  height: 5vh;
+  height: auto;
 
-  padding: 20px 0px 0px 0px;
+  padding: 20px 0px 20px 0px;
 
   ul{
     list-style: none;
@@ -45,8 +45,11 @@
   padding-top: 60px;
   transition: 0.5s;
 
-  li{
-    margin: 8px 0 0 0;
+  ul{
+      flex-direction: column;
+      li{
+        margin: 8px 0 0 0;
+      }
   }
 
   a{

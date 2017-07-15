@@ -1,19 +1,11 @@
 #projects{
   .container{
     width: 80vw;
-    display: flex;
-    flex:0 1 auto;
-    flex-flow:row wrap;
-
-  }
-
-  .highlight{
-    @media screen and (max-width: $break-large){
-      flex-direction: column;
-      img{
-        width: 100%;
-        height: auto;
-      }
+    ul{
+      display: flex;
+      justify-content: space-between;
+      flex-wrap:wrap;
+      flex-direction: row;
     }
   }
 

@@ -1,20 +1,29 @@
-body, div {
+* {
+  box-sizing: border-box; }
+
+body, div, ul, li, nav, footer, h1, h2, h3, h4, h5, h6, i, span {
   display: flex;
-  flex-direction: column; }
+  flex-direction: row; }
+
+h1, h2, h3, h4, h5, h6 {
+  align-self: flex-start; }
 
 body {
-  margin: 0;
-  overflow-x: hidden; }
+  margin: 0 auto;
+  overflow-x: hidden;
+  line-height: 1.3; }
 
-ul {
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
   -webkit-margin-before: 0px;
   -webkit-marghin-after: 0px;
   -webkit-padding-start: 0px;
-  display: flex;
-  flex-direction: column; }
-
-nav, footer, h1, h2, h3, h4, h5, h6, i, span {
   display: flex; }
+
+img {
+  width: 100%; }
 
 body {
   background-color: #009688;
@@ -36,10 +45,11 @@ a {
 .container {
   flex-direction: column;
   margin-top: 30px;
-  align-items: center; }
+  align-items: center;
+  width: 80vw; }
 
 #jumbotron {
-  margin-top: 10vh; }
+  margin-top: 100px; }
   #jumbotron .jumbotron-bg {
     width: 80vw;
     height: auto;
@@ -50,6 +60,7 @@ a {
     border-radius: 2px;
     box-shadow: 1px 1px 1px #666; }
     #jumbotron .jumbotron-bg .container {
+      font-size: 120%;
       padding: 10px 20px;
       margin: 30vh auto;
       -moz-border-radius: 2px;
@@ -58,6 +69,9 @@ a {
       box-shadow: 1px 1px 1px #666;
       background-color: rgba(255, 255, 255, 0.7);
       max-width: 80%; }
+      #jumbotron .jumbotron-bg .container h2 {
+        align-self: center;
+        width: 80%; }
       #jumbotron .jumbotron-bg .container ul {
         flex-direction: row; }
   @media screen and (max-width: 1070px) {
@@ -66,7 +80,7 @@ a {
       width: 100%;
       height: 100%;
       margin: auto;
-      padding: 30vh 0;
+      padding: 10vh 0;
       max-width: none; }
       #jumbotron .jumbotron-bg .container ul {
         flex-direction: column; } }
@@ -77,19 +91,16 @@ a {
   -webkit-border-radius: 2px;
   border-radius: 2px;
   box-shadow: 1px 1px 1px #666;
-  width: 80vw; }
+  width: 80vw;
+  padding: 0 15px 20px 15px; }
 
 #projects .container {
-  width: 80vw;
-  display: flex;
-  flex: 0 1 auto;
-  flex-flow: row wrap; }
-@media screen and (max-width: 1070px) {
-  #projects .highlight {
-    flex-direction: column; }
-    #projects .highlight img {
-      width: 100%;
-      height: auto; } }
+  width: 80vw; }
+  #projects .container ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row; }
 
 #contact {
   display: flex; }
@@ -185,8 +196,8 @@ a {
   align-items: baseline;
   flex-flow: row;
   background-color: #00695c;
-  height: 5vh;
-  padding: 20px 0px 0px 0px; }
+  height: auto;
+  padding: 20px 0px 20px 0px; }
   #navbar ul {
     list-style: none;
     flex-direction: row; }
@@ -212,8 +223,10 @@ a {
   overflow-x: hidden;
   padding-top: 60px;
   transition: 0.5s; }
-  .side-nav li {
-    margin: 8px 0 0 0; }
+  .side-nav ul {
+    flex-direction: column; }
+    .side-nav ul li {
+      margin: 8px 0 0 0; }
   .side-nav a {
     padding: 10px 10px 10px 30px;
     text-decoration: none;
@@ -238,41 +251,30 @@ a {
 @media screen and (max-width: 1070px) {
   .navbar-nav {
     display: none; } }
-.card {
+.card-item {
+  display: flex;
+  padding: 0.5em;
+  width: 100%;
+  flex-grow: 1; }
+  @media all and (min-width: 40em) {
+    .card-item {
+      width: 50%;
+      flex-grow: 0; } }
+  @media all and (min-width: 60em) {
+    .card-item {
+      width: 30%;
+      flex-grow: 0; } }
+
+.card-content {
   -moz-border-radius: 2px;
   -webkit-border-radius: 2px;
   border-radius: 2px;
   box-shadow: 1px 1px 1px #666;
   background-color: #FFF;
-  padding: 0 10px 10px 10px;
-  width: 250px;
-  margin-bottom: 10px;
-  margin-right: 3px; }
-  .card img {
-    width: 100%;
-    height: auto; }
-  .card p {
-    display: none; }
-  .card .btn {
-    align-self: center; }
-
-.card.highlight {
-  order: -1;
-  width: 100%;
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  flex-flow: row wrap;
-  padding-bottom: 20px; }
-  .card.highlight h3 {
-    width: 100%; }
-  .card.highlight img {
-    width: 30%;
-    height: auto; }
-  .card.highlight p {
-    display: inherit;
-    margin-left: 20px; }
-  .card.highlight .btn {
-    display: none; }
+  flex-direction: column;
+  padding: 1em; }
+  .card-content p {
+    flex: 1 0 auto; }
 
 /*# sourceMappingURL=main.css.map */
