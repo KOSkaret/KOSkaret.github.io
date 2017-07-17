@@ -1,5 +1,8 @@
 #aboutMe{
   .container{
+    display:flex;
+    justify-content: flex-start;
+    align-items: flex-start;
     background-color: $white;
     @include material-std;
     width: 80vw;

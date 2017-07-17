@@ -12,7 +12,7 @@
 
 <body>
   <nav id="navbar">
-    <span class="open-slide" onclick="openSlideMenu()">
+    <span id="open-menu" class="open-slide">
       <a href="#"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></a>
     </span>
       <span class="navbar-nav">
@@ -20,18 +20,18 @@
           <li><a href="#start">Start</a></li>
           <li><a href="#aboutMe">About</a></li>
           <li><a href="#projects">Portefolio</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <!--<li><a href="#contact">Contact</a></li>-->
         </ul>
       </span>
   </nav>
 
   <div id="side-menu" class="side-nav">
-    <ul onclick="closeSlideMenu()">
+    <ul>
       <li><a href="#" class="btn-close">&times;</a></li>
       <li><a href="#start">Start</a></li>
       <li><a href="#aboutMe">About</a></li>
       <li><a href="#projects">Portefolio</a></li>
-      <li><a href="#contact">Contact</a></li>
+      <!--<li><a href="#contact">Contact</a></li>-->
     </ul>
   </div>
   <!--See README.md for more information about this page. -->
@@ -69,7 +69,7 @@
           <li class="card-item">
             <div class="card-content">
               <h3>Project 1</h3>
-              <img src="./img/project1.jpg" alt="">
+              <img src="./img/project.jpg" alt="">
               <p>This is a text description about my project. Why I made it, what I made it of.
                 Test, and test and test and test and test.</p>
             </div>
@@ -77,27 +77,27 @@
           <li class="card-item">
             <div class="card-content">
               <h3>Project 2</h3>
-              <img src="./img/project2.jpg" alt="">
+              <img src="./img/project.jpg" alt="">
               <p>This is a text description about my project. Why I made it, what I made it of.</p>
             </div>
           </li>
           <li class="card-item">
             <div class="card-content">
               <h3>Project 3</h3>
-              <img src="./img/project3.jpg" alt="">
+              <img src="./img/project.jpg" alt="">
               <p>This is a text description about my project. Why I made it, what I made it of.</p>
             </div>
           </li>
           <li class="card-item">
             <div class="card-content">
               <h3>Project 4</h3>
-              <img src="./img/project3.jpg" alt="">
+              <img src="./img/project.jpg" alt="">
               <p>This is a text description about my project. Why I made it, what I made it of.</p></div>
           </li>
         </ul>
       </div>
     </div>
-
+<!--
     <div id="contact">
       <div class="container">
         <form class="forms" action="index.html" method="post">
@@ -107,9 +107,17 @@
         </form>
       </div>
     </div>
-  </div>
+-->
+</div>
   <footer>
     <div class="footer">
+      <p>Where to find me:</p>
+      <ul>
+        <li><a href="https://github.com/KOSkaret">GitHub</a></li>
+        <li><a href="https://twitter.com/TyfonKnut">Twitter</a></li>
+        <li><a href="https://www.linkedin.com/in/knut-olav-skaret-9679b238/">linkedIn</a></li>
+        <!--<li><a href="mailto:">e-mail</a></li>-->
+      </ul>
     </div>
   </footer>
   <script src="./js/index.js">

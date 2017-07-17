@@ -2,7 +2,8 @@
   margin-top: 90px;
 
   .jumbotron-bg{
-    background-image: url("/img/project2.jpg");
+    background-image: url("/img/jumbotron-bgp.jpg");
+    background-size: cover;
     background-repeat:no-repeat;
     @include border-radius(2px);
     @include box-shadow(1px);

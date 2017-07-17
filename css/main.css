@@ -51,7 +51,8 @@ a {
 #jumbotron {
   margin-top: 90px; }
   #jumbotron .jumbotron-bg {
-    background-image: url("/img/project2.jpg");
+    background-image: url("/img/jumbotron-bgp.jpg");
+    background-size: cover;
     background-repeat: no-repeat;
     -moz-border-radius: 2px;
     -webkit-border-radius: 2px;
@@ -84,6 +85,9 @@ a {
           flex-direction: column; } }
 
 #aboutMe .container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
   background-color: #FFF;
   -moz-border-radius: 2px;
   -webkit-border-radius: 2px;
@@ -150,7 +154,12 @@ a {
         border-color: #FF6F00; }
 
 .footer {
+  display: flex;
+  flex-direction: column;
   width: 100%;
+  font-size: 120%;
+  font-weight: bold;
+  text-transform: uppercase;
   align-items: center;
   background-color: #00695c;
   padding: 20px 0 10px 0;
@@ -159,10 +168,7 @@ a {
     list-style: none;
     flex-direction: row; }
     .footer ul li {
-      margin-right: 10px;
-      font-size: 1.4em;
-      font-weight: bold;
-      text-transform: uppercase; }
+      margin-right: 10px; }
 
 .btn {
   background-color: #FFA000;
