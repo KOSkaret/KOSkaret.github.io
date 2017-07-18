@@ -8,5 +8,9 @@
   flex-direction: column;
   margin-top: 30px;
   align-items: center;
-  width: 80vw;
+  width: 100%;
+
+  @media all and (min-width:40em){
+    width:80vw;
   }
+}
