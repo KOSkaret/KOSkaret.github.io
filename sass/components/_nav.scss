@@ -1,4 +1,8 @@
 #navbar{
+  a{
+    text-decoration: none;
+    color: $content-color;
+  }
   position: fixed;
   margin:auto;
   width: 100%;
